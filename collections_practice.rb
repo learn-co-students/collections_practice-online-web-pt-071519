@@ -17,6 +17,10 @@ def swap_elements(array)
   array
 end
 
+# def swap_elements(array, index, destination_index)
+
+# end
+
 def reverse_array(array)
   array.reverse
 end
@@ -32,11 +36,14 @@ def find_a(array)
 end
 
 def sum_array(array)
-  sum = 0 
-  array.each do |n|
-    sum += n
-  end
-  sum
+  # sum = 0 
+  # array.each do |n|
+  #   sum += n
+  # end
+  # sum
+  array.inject { |sum, n| sum + n }
+  # array.inject(:+)
+  # inject and reduce are aliases
 end
 
 def add_s(array)
