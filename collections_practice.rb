@@ -30,8 +30,38 @@ end
 
 
 def swap_elements (array_of_elements)
-  array_of_elements.sort do |a, b|
-    a.index +2
-      1
+  array_of_elements[1], array_of_elements[2] = array_of_elements[2], array_of_elements[1]
+  array_of_elements
+end
+
+def reverse_array (integers)
+  integers.reverse
+end
+
+def kesha_maker(array)
+  array.each do |name|
+    #name.slice[0..2]
+    #money << name.insert(2, "$")
+    name[2] = "$"
   end
 end
+
+def find_a(word_list)
+  word_list.select do |word|
+    word.start_with?("a")
+  end
+end
+
+def sum_array(number_list)
+  number_list.sum
+  end
+
+def add_s(singulars)
+    singulars.collect do |x|
+      if singulars[1] == x
+        x
+      else
+        x + "s"
+      end
+    end
+  end
